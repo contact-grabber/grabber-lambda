@@ -1,0 +1,26 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-contactscraper-staging-221852-authRole",
+      "UnauthRoleArn": "arn:aws:iam::070766035595:role/amplify-contactscraper-staging-221852-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::070766035595:role/amplify-contactscraper-staging-221852-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-contactscraper-staging-221852-deployment",
+      "UnauthRoleName": "amplify-contactscraper-staging-221852-unauthRole",
+      "StackName": "amplify-contactscraper-staging-221852",
+      "StackId": "arn:aws:cloudformation:us-west-2:070766035595:stack/amplify-contactscraper-staging-221852/3c7bdb20-97ef-11eb-9e92-022ee5332101",
+      "AmplifyAppId": "d3r7d6c4tw4h5f"
+    },
+    "categories": {
+      "auth": {
+        "ContactScraper": {}
+      },
+      "function": {
+        "scraperfunction": {
+          "deploymentBucketName": "amplify-contactscraper-staging-221852-deployment",
+          "s3Key": "amplify-builds/scraperfunction-66514553416b42683548-build.zip"
+        }
+      }
+    }
+  }
+}

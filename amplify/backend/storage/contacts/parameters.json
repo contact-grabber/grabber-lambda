@@ -1,0 +1,7 @@
+{
+    "tableName": "leads",
+    "partitionKeyName": "email",
+    "partitionKeyType": "S",
+    "sortKeyName": "phone",
+    "sortKeyType": "N"
+}
