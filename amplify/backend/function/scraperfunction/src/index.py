@@ -13,20 +13,20 @@ def handler(event, context):
     results = soup.find(id='resultsCol')
     job_elems = results.find_all('div', class_='jobsearch-SerpJobCard')
     titles = []
-    # companies = []
-    # summaries = []
+    companies = []
+    summaries = []
     for job_elem in job_elems:
         title_elem = job_elem.find('h2', class_='title')
-        # company_elem = job_elem.find('div', class_='sjcl')
-        # summary_elem = job_elem.find('div', class_='summary')
+        company_elem = job_elem.find('div', class_='sjcl')
+        summary_elem = job_elem.find('div', class_='summary')
         titles.append(title_elem.text.strip())
-        # companies.append(company_elem.text.strip())
-        # summaries.append(summary_elem.text.strip())
+        companies.append(company_elem.text.strip())
+        summaries.append(summary_elem.text.strip())
 
     response ={
         "titles": titles,
-        # "companies": companies,
-        # "summaries": summaries
+        "companies": companies,
+        "summaries": summaries
     }
 
     return {

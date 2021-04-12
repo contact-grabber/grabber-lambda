@@ -126,3 +126,9 @@ Now You can see the output in your terminal!
 ```
 python3 index.py
 ```
+
+## Next Steps / Goals
+
+- Working functionality on Lambda
+- Using Selenium for dynamic data scraping
+- Adding a frontend for better display and requesting
