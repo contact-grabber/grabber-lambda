@@ -1,6 +1,6 @@
 # Grabber Backend:
 
-This is a web scraper that runs off of Serverless Technology from AWS.
+This is a web scraper that runs off of Serverless Technology from AWS!
 
 ## Infrastructure Design
 
@@ -26,7 +26,7 @@ We built a web scraper for a static page on a job search website using the Beaut
 
 ## What Went Wrong?
 
-Everythin. In all seriousness we got everything to work from the Lambda function to the web scraper. We found that when the scraper is used in the Lambda function, there is intermittent loss in functionality. When the URL is called, we think the issue is the parser is not able to parse the function before the Lambda function finished it's operation. Causing a "cannot find_all from NONE Type". We also learned about the limitations of BeautifulSoup and not being able to parse dynamic JavaScript created page contents.
+Everythin. In all seriousness, we got everything to work from the Lambda function to the web scraper. We found that when the scraper is used in the Lambda function, there is intermittent loss in functionality. When the URL is called, we think the issue is the parser is not able to parse the function before the Lambda function finished it's operation. Causing a "cannot find_all from NONE Type". We also learned about the limitations of BeautifulSoup and not being able to parse dynamic JavaScript created page contents.
 
 ## Try For Your Self!
 
