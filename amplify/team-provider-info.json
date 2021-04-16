@@ -18,7 +18,7 @@
       "function": {
         "scraperfunction": {
           "deploymentBucketName": "amplify-contactscraper-staging-221852-deployment",
-          "s3Key": "amplify-builds/scraperfunction-66514553416b42683548-build.zip"
+          "s3Key": "amplify-builds/scraperfunction-463943736d4b57366376-build.zip"
         }
       }
     }

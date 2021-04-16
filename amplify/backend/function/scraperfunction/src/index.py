@@ -2,15 +2,19 @@ import json
 import time
 from bs4 import BeautifulSoup
 import requests
-
+from scraper_api import ScraperAPIClient
+import os
 
 def handler(event, context):
- 
+    
+    client = ScraperAPIClient(os.environ.get('API_KEY'))
     URL = "https://www.indeed.com/jobs?q=Entry+Level+Software+Engineer&l=Remote"
-    page = requests.get(URL)
-    time.sleep(5)
+    page = client.get(url = URL)
+    print(page)
     soup = BeautifulSoup(page.content, 'html.parser')
+    print(soup)
     results = soup.find(id='resultsCol')
+    print(results)
     job_elems = results.find_all('div', class_='jobsearch-SerpJobCard')
     titles = []
     companies = []
@@ -28,6 +32,7 @@ def handler(event, context):
         "companies": companies,
         "summaries": summaries
     }
+    
 
     return {
         'statusCode': 200,

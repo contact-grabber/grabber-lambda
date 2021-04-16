@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "6414717c70730d5ce9bd0a74fd5775018b473ae21e02758bc38d986bcc46485e"
+            "sha256": "8f21271f6241bf15ef96d4142bfcd7f9564fdb59b50f1d59b231d20a98f9393a"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -62,6 +62,14 @@
             ],
             "index": "pypi",
             "version": "==2.25.1"
+        },
+        "scraperapi-sdk": {
+            "hashes": [
+                "sha256:613c92132963d5045310bcd87b9b06e4491b446697470aa980da38d956a0a646",
+                "sha256:fd86d6d13ab4800d72c69714fa4265043f206ba39abc796ea722db9358620bfe"
+            ],
+            "index": "pypi",
+            "version": "==0.2.2"
         },
         "soupsieve": {
             "hashes": [
